@@ -43,7 +43,6 @@ function deleteAllCompletedTodos(){
 	<KeepAlive>
 	<component :is="tabs[currentTab]" :class="currentTab != 'Completed'? 'tab' : 'completed'" :todos="todos" @delete-all="deleteAllCompletedTodos()" @delete-todo="id => deleteTodo(id)"></component>
 	</KeepAlive>
-	<h1>{{}}</h1>
     </main>
 </template>
 
